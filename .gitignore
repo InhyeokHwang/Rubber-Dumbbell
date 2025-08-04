@@ -7,3 +7,6 @@ build/
 *.xcodeproj/xcuserdata/
 *.xcodeproj/xcshareddata/
 
+
+# macOS
+.DS_Store
