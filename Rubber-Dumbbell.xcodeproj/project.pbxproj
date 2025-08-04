@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		6717AD952E40C5A300BDBC66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6717AD732E40C5A200BDBC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6717AD7A2E40C5A200BDBC66;
+			remoteInfo = "Rubber-Dumbbell";
+		};
+		6717AD9F2E40C5A300BDBC66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6717AD732E40C5A200BDBC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6717AD7A2E40C5A200BDBC66;
+			remoteInfo = "Rubber-Dumbbell";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6717AD7B2E40C5A200BDBC66 /* Rubber-Dumbbell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rubber-Dumbbell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6717AD942E40C5A300BDBC66 /* Rubber-DumbbellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber-DumbbellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6717AD9E2E40C5A300BDBC66 /* Rubber-DumbbellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rubber-DumbbellUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6717AD7D2E40C5A200BDBC66 /* Rubber-Dumbbell */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Rubber-Dumbbell";
+			sourceTree = "<group>";
+		};
+		6717AD972E40C5A300BDBC66 /* Rubber-DumbbellTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Rubber-DumbbellTests";
+			sourceTree = "<group>";
+		};
+		6717ADA12E40C5A300BDBC66 /* Rubber-DumbbellUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Rubber-DumbbellUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6717AD782E40C5A200BDBC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD912E40C5A300BDBC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD9B2E40C5A300BDBC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6717AD722E40C5A200BDBC66 = {
+			isa = PBXGroup;
+			children = (
+				6717AD7D2E40C5A200BDBC66 /* Rubber-Dumbbell */,
+				6717AD972E40C5A300BDBC66 /* Rubber-DumbbellTests */,
+				6717ADA12E40C5A300BDBC66 /* Rubber-DumbbellUITests */,
+				6717AD7C2E40C5A200BDBC66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6717AD7C2E40C5A200BDBC66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6717AD7B2E40C5A200BDBC66 /* Rubber-Dumbbell.app */,
+				6717AD942E40C5A300BDBC66 /* Rubber-DumbbellTests.xctest */,
+				6717AD9E2E40C5A300BDBC66 /* Rubber-DumbbellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6717AD7A2E40C5A200BDBC66 /* Rubber-Dumbbell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6717ADA82E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-Dumbbell" */;
+			buildPhases = (
+				6717AD772E40C5A200BDBC66 /* Sources */,
+				6717AD782E40C5A200BDBC66 /* Frameworks */,
+				6717AD792E40C5A200BDBC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6717AD7D2E40C5A200BDBC66 /* Rubber-Dumbbell */,
+			);
+			name = "Rubber-Dumbbell";
+			packageProductDependencies = (
+			);
+			productName = "Rubber-Dumbbell";
+			productReference = 6717AD7B2E40C5A200BDBC66 /* Rubber-Dumbbell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6717AD932E40C5A300BDBC66 /* Rubber-DumbbellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6717ADAB2E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-DumbbellTests" */;
+			buildPhases = (
+				6717AD902E40C5A300BDBC66 /* Sources */,
+				6717AD912E40C5A300BDBC66 /* Frameworks */,
+				6717AD922E40C5A300BDBC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6717AD962E40C5A300BDBC66 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6717AD972E40C5A300BDBC66 /* Rubber-DumbbellTests */,
+			);
+			name = "Rubber-DumbbellTests";
+			packageProductDependencies = (
+			);
+			productName = "Rubber-DumbbellTests";
+			productReference = 6717AD942E40C5A300BDBC66 /* Rubber-DumbbellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6717AD9D2E40C5A300BDBC66 /* Rubber-DumbbellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6717ADAE2E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-DumbbellUITests" */;
+			buildPhases = (
+				6717AD9A2E40C5A300BDBC66 /* Sources */,
+				6717AD9B2E40C5A300BDBC66 /* Frameworks */,
+				6717AD9C2E40C5A300BDBC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6717ADA02E40C5A300BDBC66 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6717ADA12E40C5A300BDBC66 /* Rubber-DumbbellUITests */,
+			);
+			name = "Rubber-DumbbellUITests";
+			packageProductDependencies = (
+			);
+			productName = "Rubber-DumbbellUITests";
+			productReference = 6717AD9E2E40C5A300BDBC66 /* Rubber-DumbbellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6717AD732E40C5A200BDBC66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6717AD7A2E40C5A200BDBC66 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					6717AD932E40C5A300BDBC66 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6717AD7A2E40C5A200BDBC66;
+					};
+					6717AD9D2E40C5A300BDBC66 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6717AD7A2E40C5A200BDBC66;
+					};
+				};
+			};
+			buildConfigurationList = 6717AD762E40C5A200BDBC66 /* Build configuration list for PBXProject "Rubber-Dumbbell" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6717AD722E40C5A200BDBC66;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6717AD7C2E40C5A200BDBC66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6717AD7A2E40C5A200BDBC66 /* Rubber-Dumbbell */,
+				6717AD932E40C5A300BDBC66 /* Rubber-DumbbellTests */,
+				6717AD9D2E40C5A300BDBC66 /* Rubber-DumbbellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6717AD792E40C5A200BDBC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD922E40C5A300BDBC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD9C2E40C5A300BDBC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6717AD772E40C5A200BDBC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD902E40C5A300BDBC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6717AD9A2E40C5A300BDBC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6717AD962E40C5A300BDBC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6717AD7A2E40C5A200BDBC66 /* Rubber-Dumbbell */;
+			targetProxy = 6717AD952E40C5A300BDBC66 /* PBXContainerItemProxy */;
+		};
+		6717ADA02E40C5A300BDBC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6717AD7A2E40C5A200BDBC66 /* Rubber-Dumbbell */;
+			targetProxy = 6717AD9F2E40C5A300BDBC66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6717ADA62E40C5A300BDBC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6717ADA72E40C5A300BDBC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6717ADA92E40C5A300BDBC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-Dumbbell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6717ADAA2E40C5A300BDBC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-Dumbbell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6717ADAC2E40C5A300BDBC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-DumbbellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rubber-Dumbbell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rubber-Dumbbell";
+			};
+			name = Debug;
+		};
+		6717ADAD2E40C5A300BDBC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-DumbbellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rubber-Dumbbell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rubber-Dumbbell";
+			};
+			name = Release;
+		};
+		6717ADAF2E40C5A300BDBC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-DumbbellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rubber-Dumbbell";
+			};
+			name = Debug;
+		};
+		6717ADB02E40C5A300BDBC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TG9P5VJDQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dingdongmelody.Rubber-DumbbellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Rubber-Dumbbell";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6717AD762E40C5A200BDBC66 /* Build configuration list for PBXProject "Rubber-Dumbbell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6717ADA62E40C5A300BDBC66 /* Debug */,
+				6717ADA72E40C5A300BDBC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6717ADA82E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-Dumbbell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6717ADA92E40C5A300BDBC66 /* Debug */,
+				6717ADAA2E40C5A300BDBC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6717ADAB2E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-DumbbellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6717ADAC2E40C5A300BDBC66 /* Debug */,
+				6717ADAD2E40C5A300BDBC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6717ADAE2E40C5A300BDBC66 /* Build configuration list for PBXNativeTarget "Rubber-DumbbellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6717ADAF2E40C5A300BDBC66 /* Debug */,
+				6717ADB02E40C5A300BDBC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6717AD732E40C5A200BDBC66 /* Project object */;
+}
