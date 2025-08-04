@@ -1,88 +1,104 @@
-//
-//  GameScene.swift
-//  Rubber-Dumbbell
-//
-//  Created by inhyeok on 8/4/25.
-//
-
 import SpriteKit
-import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene { // SKScene을 상속받아서 구현
+    static var shared: GameScene?
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
-    
+    private var dumbbell: SKNode! // 덤벨 노드
+
     override func didMove(to view: SKView) {
-        
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        self.backgroundColor = .white // scene의 배경을 흰색으로 설정
+        GameScene.shared = self  // 반드시 있어야 외부에서 접근 가능
+
+        physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame) // 화면 경계 (충돌 경계)
+
+        addDumbbell() // 덤벨을 생성
+        addObstacles() // 장애물 생성
+    }
+
+    func addDumbbell() {
+        dumbbell = SKNode()
+        dumbbell.position = CGPoint(x: frame.midX, y: frame.midY)
+
+        // 왼쪽 weight
+        let leftWeight = SKSpriteNode(color: .darkGray, size: CGSize(width: 40, height: 80))
+        leftWeight.position = CGPoint(x: -70, y: 0)
+
+        // 오른쪽 weight
+        let rightWeight = SKSpriteNode(color: .darkGray, size: CGSize(width: 40, height: 80))
+        rightWeight.position = CGPoint(x: 70, y: 0)
+
+        // 핸들
+        let handle = SKSpriteNode(color: .gray, size: CGSize(width: 100, height: 20))
+        handle.position = CGPoint.zero
+
+        // 덤벨 구성
+        dumbbell.addChild(leftWeight)
+        dumbbell.addChild(rightWeight)
+        dumbbell.addChild(handle)
+
+        // 각 파츠별 물리 바디 생성
+        let leftBody = SKPhysicsBody(rectangleOf: leftWeight.size, center: leftWeight.position)
+        let rightBody = SKPhysicsBody(rectangleOf: rightWeight.size, center: rightWeight.position)
+        let handleBody = SKPhysicsBody(rectangleOf: handle.size, center: handle.position)
+
+        // 파츠를 합쳐 복합 물리 바디 생성
+        let compoundBody = SKPhysicsBody(bodies: [leftBody, rightBody, handleBody])
+
+        // 물리 속성 설정
+        compoundBody.restitution = 1.0          // 튕김 정도
+        compoundBody.angularVelocity = 2.0      // 초기 회전
+        compoundBody.angularDamping = 0.1       // 회전 감속
+        compoundBody.linearDamping = 0.3        // 이동 감속
+        compoundBody.friction = 0.8             // 마찰력
+        compoundBody.allowsRotation = true
+
+        dumbbell.physicsBody = compoundBody
+        addChild(dumbbell)
     }
     
-    
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
+    func addObstacles() {
+        let obstacleSize = CGSize(width: 100, height: 20)
+
+        // 장애물 1: 화면 위쪽
+        let obstacle1 = SKSpriteNode(color: .black, size: obstacleSize)
+        obstacle1.position = CGPoint(x: frame.midX, y: frame.height - 100)
+        obstacle1.physicsBody = SKPhysicsBody(rectangleOf: obstacleSize)
+        obstacle1.physicsBody?.isDynamic = false // 고정된 장애물
+        addChild(obstacle1)
+
+        // 장애물 2: 화면 아래쪽
+        let obstacle2 = SKSpriteNode(color: .black, size: obstacleSize)
+        obstacle2.position = CGPoint(x: frame.midX - 150, y: 150)
+        obstacle2.physicsBody = SKPhysicsBody(rectangleOf: obstacleSize)
+        obstacle2.physicsBody?.isDynamic = false
+        addChild(obstacle2)
+
+        // 장애물 3: 화면 중간 좌측
+        let obstacle3 = SKSpriteNode(color: .black, size: CGSize(width: 20, height: 120))
+        obstacle3.position = CGPoint(x: 100, y: frame.midY)
+        obstacle3.physicsBody = SKPhysicsBody(rectangleOf: obstacle3.size)
+        obstacle3.physicsBody?.isDynamic = false
+        addChild(obstacle3)
     }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
+
+    // 키 입력 또는 버튼 처리에 따라 회전 방향 조정도 가능
+    func rotateLeft() {
+        dumbbell.physicsBody?.applyAngularImpulse(0.2)
     }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
+
+    func rotateRight() {
+        dumbbell.physicsBody?.applyAngularImpulse(-0.2)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        guard let body = dumbbell.physicsBody else { return }
+
+        let maxAngularVelocity: CGFloat = 10.0 // 최대 회전 속도 제한
+
+        if body.angularVelocity > maxAngularVelocity {
+            body.angularVelocity = maxAngularVelocity
+        } else if body.angularVelocity < -maxAngularVelocity {
+            body.angularVelocity = -maxAngularVelocity
+        }
     }
 }
